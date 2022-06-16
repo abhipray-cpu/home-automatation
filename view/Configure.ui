@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0.039801, y1:0.136, x2:1, y2:0, stop:0 rgba(134, 77, 218, 255), stop:1 rgba(110, 243, 226, 255));</string>
+  </property>
   <widget class="QWidget" name="MainWidget">
    <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
@@ -28,10 +31,15 @@
       <widget class="QListWidget" name="AvailabelDevieList">
        <property name="font">
         <font>
-         <pointsize>14</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
+         <family>Mongolian Baiti</family>
+         <pointsize>15</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15pt &quot;Mongolian Baiti&quot;;</string>
        </property>
       </widget>
      </item>
@@ -39,10 +47,18 @@
       <widget class="QListWidget" name="ActiveDeviceList">
        <property name="font">
         <font>
-         <pointsize>14</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
+         <family>Mongolian Baiti</family>
+         <pointsize>15</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
         </font>
+       </property>
+       <property name="toolTip">
+        <string extracomment="This is the list of available relay channels"/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 15pt &quot;Mongolian Baiti&quot;;</string>
        </property>
        <item>
         <property name="text">
@@ -139,13 +155,27 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <family>Mongolian Baiti</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Mongolian Baiti&quot;;</string>
     </property>
     <property name="text">
      <string>Help</string>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="CommitChangeBtn">
@@ -159,13 +189,25 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <family>Mongolian Baiti</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Mongolian Baiti&quot;;
+</string>
     </property>
     <property name="text">
      <string>Commit changes</string>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="refresh">
@@ -179,13 +221,27 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <family>Mongolian Baiti</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Mongolian Baiti&quot;;</string>
     </property>
     <property name="text">
      <string>Refresh</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>

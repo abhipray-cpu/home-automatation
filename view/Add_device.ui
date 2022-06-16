@@ -13,251 +13,291 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0.039801, y1:0.136, x2:1, y2:0, stop:0 rgba(134, 77, 218, 255), stop:1 rgba(110, 243, 226, 255));
+</string>
+  </property>
   <widget class="QWidget" name="MainWidget">
-   <widget class="QFrame" name="FormLayout">
+   <widget class="QLabel" name="NameLabel">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>10</y>
-      <width>1200</width>
-      <height>800</height>
+      <x>20</x>
+      <y>30</y>
+      <width>111</width>
+      <height>24</height>
      </rect>
     </property>
-    <layout class="QFormLayout" name="formLayout">
-     <item row="1" column="0">
-      <widget class="QLabel" name="NameLabel">
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Device Name</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QLineEdit" name="NameEdit">
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="placeholderText">
-        <string>Add a device name</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="1">
-      <spacer name="verticalSpacer_3">
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>20</width>
-         <height>40</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item row="3" column="0">
-      <widget class="QLabel" name="deviceTypeLabel">
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Device Type</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="1">
-      <widget class="QComboBox" name="DeviceTypeCombo">
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <item>
-        <property name="text">
-         <string>Bulb</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Fan</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Screen</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Charger</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Speaker</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>RGB Strip</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>LED Bulb</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Lamp</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Tubelight</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Camera</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Some other small appliance</string>
-        </property>
-       </item>
-      </widget>
-     </item>
-     <item row="4" column="1">
-      <spacer name="verticalSpacer_5">
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>20</width>
-         <height>40</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item row="5" column="0">
-      <widget class="QLabel" name="loadTypeLabel">
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Device Rating</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="1">
-      <widget class="QDoubleSpinBox" name="doubleSpinBox">
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="suffix">
-        <string>Watt</string>
-       </property>
-       <property name="minimum">
-        <double>5.000000000000000</double>
-       </property>
-       <property name="maximum">
-        <double>150.990000000000009</double>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="1">
-      <spacer name="verticalSpacer_4">
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>20</width>
-         <height>40</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item row="7" column="0">
-      <widget class="QLabel" name="DescriptionLabel">
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Device Description</string>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="1">
-      <widget class="QTextEdit" name="description">
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-      </widget>
-     </item>
-     <item row="9" column="1">
-      <widget class="QPushButton" name="AddBtn">
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Add Device</string>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="1">
-      <spacer name="verticalSpacer_6">
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>20</width>
-         <height>40</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-    </layout>
+    <property name="font">
+     <font>
+      <family>Mongolian Baiti</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Mongolian Baiti&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Device Name</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="NameEdit">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>30</y>
+      <width>501</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Mongolian Baiti</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Mongolian Baiti&quot;;</string>
+    </property>
+    <property name="placeholderText">
+     <string>Add a device name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="deviceTypeLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>103</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Mongolian Baiti</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Mongolian Baiti&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Device Type</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="DeviceTypeCombo">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>90</y>
+      <width>501</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Mongolian Baiti</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Mongolian Baiti&quot;;
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Bulb</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Fan</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Screen</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Charger</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Speaker</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RGB Strip</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>LED Bulb</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Lamp</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Tubelight</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Camera</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Some other small appliance</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="loadTypeLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>118</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Mongolian Baiti</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Mongolian Baiti&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Device Rating</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>160</y>
+      <width>491</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Mongolian Baiti</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Mongolian Baiti&quot;;</string>
+    </property>
+    <property name="suffix">
+     <string>Watt</string>
+    </property>
+    <property name="minimum">
+     <double>5.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>150.990000000000009</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="DescriptionLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>160</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Mongolian Baiti</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Mongolian Baiti&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Device Description</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="description">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>210</y>
+      <width>951</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AddBtn">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>560</y>
+      <width>301</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:80
+</string>
+    </property>
+    <property name="text">
+     <string>Add Device</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

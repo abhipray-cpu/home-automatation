@@ -7,6 +7,9 @@ from PyQt5 import QtWidgets
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
+from PyQt5.QtWidgets import QGraphicsDropShadowEffect
+from PyQt5.QtCore import QPoint, Qt
+from PyQt5.QtGui import QColor
 import time
 import os
 from datetime import datetime
@@ -60,6 +63,10 @@ class AddDevice(QMainWindow):
         self.DeviceListMenu.addAction(self.menu_action4)
         self.ControlMenu.addAction(self.menu_action5)
         self.AddBtn.clicked.connect(self.getDetails)
+        effect = QGraphicsDropShadowEffect(
+            offset=QPoint(1, 1), blurRadius=8
+        )
+        self.AddBtn.setGraphicsEffect(effect)
 
     def getDetails(self):
         try:
@@ -148,6 +155,13 @@ class Configure(QMainWindow):
         self.refresh.clicked.connect(self.refreshSlot)
         self.CommitChangeBtn.clicked.connect(self.commit_changes)
 
+        effect = QGraphicsDropShadowEffect(
+            offset=QPoint(2, 2), blurRadius=12
+        )
+        self.HelpBtn.setGraphicsEffect(effect)
+        self.CommitChangeBtn.setGraphicsEffect(effect)
+        self.refresh.setGraphicsEffect(effect)
+
     def help(self):
         msgBox = QMessageBox()
         msgBox.setIcon(QMessageBox.Information)
@@ -182,6 +196,7 @@ class Configure(QMainWindow):
         for val in device_list:
             self.lst.append(device_list[val]["name"])
             self.maping[device_list[val]["name"]]=val
+        self.AvailabelDevieList.clear()
         for device in self.lst:
             try:
                 self.AvailabelDevieList.addItem(f"{device}")
@@ -280,8 +295,8 @@ class deviceControl(QMainWindow):
         self.Device15Check.stateChanged.connect(self.relay15Control)
         self.Device16Check.stateChanged.connect(self.relay16Control)
         # this is the styling that will be used for on and off labels
-        self.offStyle = "background-color: red;color:white"
-        self.onStyle = "background-color: green;color:white"
+        self.offStyle = "background-color: qlineargradient(spread:pad, x1:0.632, y1:0.613, x2:1, y2:0, stop:0.328358 rgba(183, 57, 114, 255), stop:0.462687 rgba(141, 112, 139, 255), stop:0.880597 rgba(110, 243, 226, 255));"
+        self.onStyle = "background-color: qlineargradient(spread:pad, x1:0.632, y1:0.613, x2:1, y2:0, stop:0.328358 rgba(0, 207, 124, 255), stop:0.462687 rgba(141, 112, 139, 255), stop:0.880597 rgba(110, 243, 226, 255));"
         self.fetchData()
 
 
@@ -658,6 +673,9 @@ class DeviceList(QMainWindow):
         self.DeviceListMenu.addAction(self.menu_action4)
         self.ControlMenu.addAction(self.menu_action5)
         self.fetchDetils()
+        stylesheetHeader = "::section{background-color: qlineargradient(spread:pad, x1:0.039801, y1:0.136, x2:1, y2:0, stop:0 rgba(134, 77, 218, 255), stop:1 rgba(110, 243, 226, 255));border: rgba(255, 255, 255, 0.3);}"
+        self.TableWidget.horizontalHeader().setStyleSheet(stylesheetHeader)
+        self.TableWidget.verticalHeader().setStyleSheet(stylesheetHeader)
         header = self.TableWidget.horizontalHeader()
         header.setSectionResizeMode(0, QtWidgets.QHeaderView.ResizeToContents)
         header.setSectionResizeMode(1, QtWidgets.QHeaderView.ResizeToContents)
@@ -725,6 +743,9 @@ class Home(QMainWindow):
 
         header.setSectionResizeMode(4, QtWidgets.QHeaderView.Stretch)
         header.setSectionResizeMode(6, QtWidgets.QHeaderView.Stretch)
+        stylesheetHeader = "::section{background-color: qlineargradient(spread:pad, x1:0.039801, y1:0.136, x2:1, y2:0, stop:0 rgba(134, 77, 218, 255), stop:1 rgba(110, 243, 226, 255));border: rgba(255, 255, 255, 0.3);}"
+        self.TableWidget.horizontalHeader().setStyleSheet(stylesheetHeader)
+        self.TableWidget.verticalHeader().setStyleSheet(stylesheetHeader)
 
         #this function will basically sun up the data and create the data we want
 

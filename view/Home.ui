@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0.039801, y1:0.136, x2:1, y2:0, stop:0 rgba(134, 77, 218, 255), stop:1 rgba(110, 243, 226, 255));</string>
+  </property>
   <widget class="QWidget" name="MainWidget">
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
@@ -51,14 +54,16 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
+      <family>Mongolian Baiti</family>
+      <pointsize>12</pointsize>
       <weight>50</weight>
+      <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
      <string notr="true">
-</string>
+font: 12pt &quot;Mongolian Baiti&quot;;</string>
     </property>
     <property name="showGrid">
      <bool>true</bool>
