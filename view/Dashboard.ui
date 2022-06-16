@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>909</width>
+    <height>738</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="MainWidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>300</y>
+      <width>521</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Usin pyqt graph the power consumption graph will be plotted in here</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>909</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="HomeMenu">
+    <property name="title">
+     <string>Home</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="DeviceConfig">
+    <property name="title">
+     <string>Configure Devices</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="AddDeviceMenu">
+    <property name="title">
+     <string>Add Device</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="DeviceListMenu">
+    <property name="title">
+     <string>Device List</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="DashboardMenu">
+    <property name="title">
+     <string>Dashboard</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="ControlMenu">
+    <property name="title">
+     <string>Control</string>
+    </property>
+   </widget>
+   <addaction name="HomeMenu"/>
+   <addaction name="DeviceConfig"/>
+   <addaction name="AddDeviceMenu"/>
+   <addaction name="DeviceListMenu"/>
+   <addaction name="DashboardMenu"/>
+   <addaction name="ControlMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

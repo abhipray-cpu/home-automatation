@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="MainWidget">
+   <widget class="QTableWidget" name="TableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1180</width>
+      <height>850</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="sortingEnabled">
+     <bool>true</bool>
+    </property>
+    <column>
+     <property name="text">
+      <string>Device Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Type</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Description</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Rating</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Load</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="HomeMenu">
+    <property name="title">
+     <string>Home</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="DeviceConfig">
+    <property name="title">
+     <string>Configure Device</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="AddDeviceMenu">
+    <property name="title">
+     <string>Add Device</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="DeviceListMenu">
+    <property name="title">
+     <string>Device List</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="ControlMenu">
+    <property name="title">
+     <string>Control</string>
+    </property>
+   </widget>
+   <addaction name="HomeMenu"/>
+   <addaction name="DeviceConfig"/>
+   <addaction name="AddDeviceMenu"/>
+   <addaction name="DeviceListMenu"/>
+   <addaction name="ControlMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

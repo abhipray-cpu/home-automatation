@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="MainWidget">
+   <widget class="QFrame" name="FormLayout">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>1200</width>
+      <height>800</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="1" column="0">
+      <widget class="QLabel" name="NameLabel">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Device Name</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="NameEdit">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="placeholderText">
+        <string>Add a device name</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <spacer name="verticalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="deviceTypeLabel">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Device Type</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QComboBox" name="DeviceTypeCombo">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>Bulb</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Fan</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Screen</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Charger</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Speaker</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RGB Strip</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LED Bulb</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Lamp</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Tubelight</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Camera</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Some other small appliance</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <spacer name="verticalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="loadTypeLabel">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Device Rating</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QDoubleSpinBox" name="doubleSpinBox">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="suffix">
+        <string>Watt</string>
+       </property>
+       <property name="minimum">
+        <double>5.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>150.990000000000009</double>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <spacer name="verticalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="DescriptionLabel">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Device Description</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QTextEdit" name="description">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QPushButton" name="AddBtn">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Add Device</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <spacer name="verticalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="HomeMenu">
+    <property name="title">
+     <string>Home</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="DeviceConfig">
+    <property name="title">
+     <string>Configure Devices</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="AddDeviceMenu">
+    <property name="title">
+     <string>Add Device </string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="DeviceListMenu">
+    <property name="title">
+     <string>Device List</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="ControlMenu">
+    <property name="title">
+     <string>Control</string>
+    </property>
+   </widget>
+   <addaction name="HomeMenu"/>
+   <addaction name="DeviceConfig"/>
+   <addaction name="AddDeviceMenu"/>
+   <addaction name="DeviceListMenu"/>
+   <addaction name="ControlMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

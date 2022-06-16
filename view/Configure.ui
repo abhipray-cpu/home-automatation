@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="MainWidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1181</width>
+      <height>741</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="MainLayout">
+     <item>
+      <widget class="QListWidget" name="AvailabelDevieList">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="ActiveDeviceList">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>Relay Channel1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Relay Channel2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Relay Channel3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Relay Channel4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Relay Channel5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Relay Channel6</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Relay Channel7</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Relay Channel8</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Relay Channel9</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Relay Channel10</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Relay Channel11</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Relay Channel12</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Relay Channel13</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Relay Channel14</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Relay Channel15</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Relay Channel 16</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="HelpBtn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>800</y>
+      <width>93</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Help</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CommitChangeBtn">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>800</y>
+      <width>171</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Commit changes</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="refresh">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>800</y>
+      <width>93</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Refresh</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="HomeMenu">
+    <property name="title">
+     <string>Home</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="DeviceConfig">
+    <property name="title">
+     <string>Configure Devices</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="AddDeviceMenu">
+    <property name="title">
+     <string>Add Device</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="DeviceListMenu">
+    <property name="title">
+     <string>Device List</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="ControlMenu">
+    <property name="title">
+     <string>Control</string>
+    </property>
+   </widget>
+   <addaction name="HomeMenu"/>
+   <addaction name="DeviceConfig"/>
+   <addaction name="AddDeviceMenu"/>
+   <addaction name="DeviceListMenu"/>
+   <addaction name="ControlMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

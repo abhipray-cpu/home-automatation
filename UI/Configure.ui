@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>903</width>
+    <height>641</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>9</y>
+      <width>871</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QListWidget" name="listWidget_2">
+       <item>
+        <property name="text">
+         <string>Device1(Device name)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Device2(Device name)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Device3(Device name)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Device4(Device name)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Device5(Device name)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Device6(Device name)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Device7(Device name)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Device8(Device name)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Device9(Device name)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Device10(Device name)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Device11(Device name)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Device12(Device name)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Device13(Device name)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Device14(Device name)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Device15(Device name)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Device16(Device name)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Device17(Device name)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Device18(Device name)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Device19(Deivce name)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Device20(Device name)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Devcie21(Device name)</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="text">
+        <string>&lt;-------&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="listWidget"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>530</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Help</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>530</y>
+      <width>121</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Commit changes</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>903</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHome">
+    <property name="title">
+     <string>Home</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuConfigure_Devices">
+    <property name="title">
+     <string>Configure Devices</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAdd_Device">
+    <property name="title">
+     <string>Add Device</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuDevice_List">
+    <property name="title">
+     <string>Device List</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuDashboard">
+    <property name="title">
+     <string>Dashboard</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuToggle">
+    <property name="title">
+     <string>Toggle</string>
+    </property>
+   </widget>
+   <addaction name="menuHome"/>
+   <addaction name="menuConfigure_Devices"/>
+   <addaction name="menuAdd_Device"/>
+   <addaction name="menuDevice_List"/>
+   <addaction name="menuDashboard"/>
+   <addaction name="menuToggle"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
